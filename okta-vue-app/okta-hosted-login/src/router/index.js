@@ -19,6 +19,7 @@ import Auth from '@okta/okta-vue'
 import HomeComponent from '@/components/Home'
 import ProfileComponent from '@/components/Profile'
 import MessagesComponent from '@/components/Messages'
+
 import sampleConfig from '@/.samples.config'
 
 Vue.use(Router)

@@ -1,0 +1,16 @@
+version: '3.2'
+
+services:
+    vue-app:
+        container_name: vue-app
+        build: ./okta-vue-app/okta-hosted-login
+        ports: 
+          - 8080:8080
+        depends_on:
+          - node-app
+    
+    node-app:
+        container_name: node-app
+        build: ./okta-nodejs-app
+        ports:
+          - 8000:8000
